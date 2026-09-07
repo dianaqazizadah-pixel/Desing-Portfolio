@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+	.projects{
+
+width:100%;
+padding:90px 8%;
+background: pink;
+}
+
+.section-title{
+
+text-align:center;
+margin-bottom:60px;
+}
+
+.section-title h2{
+
+color:#000000;
+font-size:42px;
+font-weight:700;
+}
+
+.section-title p{
+
+color:#bdbdbd;
+font-size:17px;
+margin-top:15px;
+}
+
+.project-grid{
+
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:35px;
+}
+
+.project-card{
+
+
+overflow:hidden;
+transition:.4s;
+}
+
+.project-card:hover{
+
+transform:translateY(-10px);
+}
+
+.project-card img{
+
+width:100%;
+height:270px;
+object-fit:cover;
+display:block;
+}
+
+.project-info{
+
+padding:20px;
+}
+
+.project-info h3{
+
+color:#fff;
+margin-bottom:10px;
+}
+
+.project-info p{
+
+color:#bdbdbd;
+line-height:1.7;
+}
+
+/* Tablet */
+
+@media(max-width:992px){
+
+.project-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.project-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.projects{
+
+padding:60px 20px;
+
+}
+
+.section-title h2{
+
+font-size:32px;
+
+}
+
+.project-card img{
+
+height:240px;
+
+}
+
+}
+
+.svg2{
+	position:absolute;
+	top:20%;
+	left:30%;
+	width:300px;
+	height:auto;
+	z-index:1;
+	animation:svgTwo 4s ease-in-out infinite alternate;
+  }
+  .svg2,
+	.svg4,
+	.svg5{
+	  width:150px;
+	}
+
+	 .svg1,
+	.svg2,
+	.svg3,
+	.svg4,
+	.svg5,
+	.svg6,
+	.svg7,
+	.svg8,
+	.svg9{
+	  opacity:.4;
+	}
+
+	 .svg1,
+  .svg2,
+  .svg3,
+  .svg4,
+  .svg5,
+  .svg6,
+  .svg7,
+  .svg8,
+  .svg9,
+  .svg10,
+  .svg11{
+	will-change:transform;
+  } 
+
+  /* .loader,
+	.svg1,
+	.svg2,
+	.svg3,
+	.svg4,
+	.svg5,
+	.svg6,
+	.svg7,
+	.svg8,
+	.svg9,
+	.svg10,
+	.svg11{
+	  display:none;
+	} */
+
+	.svg1,
+  .svg2,
+  .svg3,
+  .svg4,
+  .svg5,
+  .svg6,
+  .svg7,
+  .svg8,
+  .svg9,
+  .svg10,
+  .svg11{
+	pointer-events:none;
+  }  
+
+  .svg4{
+	position:absolute;
+	top:70%;
+	left:-5%;
+	width:300px;
+	height:auto;
+	z-index:1;
+	animation:svgFour 8s ease-in-out infinite alternate;
+  }
+
+  .svg5{
+	position:absolute;
+	top:0;
+	right:10%;
+	width:300px;
+	height:auto;
+	z-index:1;
+	animation:svgFive 6s ease-in-out infinite alternate;
+  }
+</style>
+
+<body >
+	
+	<div class="loader">
+		<div class="intro">
+			<h3 class="intro-title">My Projects</h3>
+		</div>
+	</div>
+      
+	<section class="projects">
+
+		<div class="section-title">
+			<h2>My Projects</h2>
+			<p>A collection of my graphic design and branding projects.</p>
+		</div>
+	
+		<div class="project-grid">
+	
+			<div class="project-card">
+				<img src="img/01.jpg" alt="">
+				
+			</div>
+	
+			<div class="project-card">
+				<img src="img/05.jpg" alt="">
+				
+			</div>
+	
+			<div class="project-card">
+				<img src="img/1119.jpg" alt="">
+				
+			</div>
+			
+		</div>
+	<br>
+	<br>
+
+		<div class="project-grid">
+	
+			<div class="project-card">
+				<img src="img/e-01.jpg" alt="">
+				
+			</div>
+	
+			<div class="project-card">
+				<img src="img/air plan mock up.jpg" alt="">
+				
+			</div>
+	
+			<div class="project-card">
+				<img src="img/Business Card.jpg" alt="">
+				
+			</div>
+			 
+		</div>
+
+		<br>
+		<br>
+		<div class="project-grid">
+	
+			<div class="project-card">
+				<img src="img/gg.jpg" alt="">
+				
+			</div>
+	
+			<div class="project-card">
+				<img src="img/M003T125_Coffee_Cup_Holder_05.jpg" alt="">
+				
+			</div>
+	
+			<div class="project-card">
+				<img src="img/PSD_05.jpg" alt="">
+				
+			</div>
+			
+		</div>
+		
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+		<a href="index.html" class="nav-btn1 pos2">Back</a>
+		
+		<img class="svg2" src="svg/square.svg" alt="">
+		<img class="svg4" src="svg/dashed-circle.svg" alt="">
+		<img class="svg5" src="svg/square-poly.svg" alt="">
+		
+	</section>
+       
+	
+    
+        <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
